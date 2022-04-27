@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link rel="stylesheet" href="todo.css">
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <title>Marketing Todo</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container" v-if="showForm">
+            <div class="top_head">
+                <h4> {{title}} </h4>
+                <h4> {{name}} <span class="login"> {{ create}} </span></h4>
+            </div>
+            <div class="banner_content">
+                <h2> {{contentTitle}} </h2>
+                <p class="txt"> {{contentText}} </p>
+            </div>
+            <form @submit.prevent="handleSubmit()" class="form_details">
+                <label>Email</label>
+                <input type="email" required v-model="email" class="login_input">
+                <label>Full Name</label>
+                <input type="text" required v-model="fullName"class="login_input">
+                <label>Password</label>
+                <input type="password" required v-model="password" class="login_input">
+                <div v-if="passwordError" class="error"> {{passwordError}} </div>
+                <div class="submit">
+                    <button class="btn">Get started</button>
+                </div>
+            </form>
+            
+            <p class="terms"> {{ terms}} </p>
+            <!-- <p> Email: {{email}} </p>
+            <p> full name: {{fullName}} </p>
+            <p> password: {{password}} </p> -->
+            
+        </div>
+        <div v-if="payment" class="show_form">
+                <div class="detail">
+                    <h2> {{paymentDetail}} </h2>
+                    <div class="payment_details">
+                        <form @submit.prevent="paymentDetails()" class="card_detail">
+                            <div class="card">
+                                 <input class="card_name" type="text" required v-model="cardDetail" placeholder="Name on card" >
+                            </div>
+                            <div class="cards">
+                                <div class="card1">
+                                    <i class="fa fa-credit-card" aria-hidden="true" icon ></i><input type="text" required v-model="cardNumber"class="input_detail_1" placeholder="Card number">
+                                </div>
+                                <div class="card1">
+                                    
+                                <input type="number" required v-model="expiry" class="input_details" placeholder="Expiry">
+                                </div>
+                                <div class="card1">
+                                    <input type="number" required v-model="cvv" class="input_details" placeholder="CVV">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <h2> {{billingAddress}} </h2>
+                    <div class="payment_details">
+                        <form @submit.prevent="paymentDetails()" class="card_detail">
+                            <div class="bill">
+                                <div class="card">
+                                    <input class="billing_info" type="text" required v-model="street" placeholder="Street address">
+                                </div>
+                                <div>
+                                    <input type="text" required v-model="city" class="billing_info" placeholder="City" >
+                                </div>
+                            </div>
+                            <div class="bill">
+                                <div class="card">
+                                    <select name="state" id="state" v-model="state" class="billing_info">
+                                        <option value="state">State / Province</option>
+                                        <option value="Abuja">Abuja</option>
+                                        <option value="Jos">Jos</option>
+                                        <option value="Imo">Imo</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="zip_code">
+                                    <input type="number" required v-model="zip" placeholder="Zip Code" class="billing_info">
+                                    
+                                </div>
+                            </div>
+                            <div class="button_down">
+                                <h3 v-on:click="back()">Previous step</h3>
+                                <button class="button_next">Pay $888</button>
+
+                            </div>
+                        </form>
+                        <p>{{ cardDetail }} </p>
+                    </div>
+                </div>
+
+        </div>
+        <div v-if="confirmation" class="confirmation">
+            <h1> {{ confirmPayment }}</h1>
+            <div class="previous_click">
+                <div v-if="" class="back">
+                    <i v-on:click="back2()" class="fa fa-arrow-left" aria-hidden="true"></i>
+                </div>
+                <div class="home">
+                    <i v-on:click="home()" class="fa fa-home" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

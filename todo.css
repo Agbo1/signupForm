@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+}
+ .container{
+    max-width: 44%;
+    min-height: 30rem;
+    background: ghostwhite;
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+
+
+ }
+
+ #app{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background: #aab7c3;
+ }
+
+ .form_details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+     
+ }
+
+ .login_input{
+   border: none;
+   border-bottom: 1px solid #b9b6b64f;
+   color: black;
+   border-radius: 1px;
+   font-size: 15px;
+   border-top: none;
+   padding: 5px;
+   background: ghostwhite;
+   outline: none;
+   font-weight: 500;
+   width: 80%;
+ }
+
+
+ .top_head{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 30px 0px;
+    color: #565555;
+ }
+
+ h4{
+    color: #423636;
+    font-weight: 700;
+    margin: 10px 0px 10px 0px;
+ }
+
+ .txt{
+    color: #999898;
+    margin: 10px 0px 20px 0px;
+    line-height: 18px;
+    font-size: 13px;
+ }
+
+ label{
+    font-size: 13px;
+    margin: 5px 0px 5px 0px;
+    color: #959292;
+    display: inline-block;
+    
+ }
+
+ .submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+     
+ }
+
+ .btn{
+    width: 20rem;
+    padding: 9px;
+    border: none;
+    color: #ffffffed;
+    border-radius: 5px;
+    background: #1b1bb1d9;
+    font-weight: 600;
+    cursor: pointer;
+ }
+
+ .terms{
+    margin-top: 1rem;
+    font-size: 13px;
+    color: #999898;
+ }
+
+ .login{
+    color: #ff0000c4;
+    font-weight: 600;
+
+ }
+
+ .error{
+     color: red;
+     font-size: 0.8em;
+     font-weight: bold;
+     margin-top: 10px;
+ }
+
+ .show_form{
+   width: 45%;
+   min-height: 23rem;
+   background: whitesmoke;
+   border: none;
+   border-radius: 10px;
+   padding: 3rem;
+ }
+
+ #state{
+    border: none;
+    border-bottom: 1px solid #b9b6b64f;
+    outline: none;
+    color: gray;
+    background: whitesmoke;
+    width: 100%;
+ }
+
+ .input_details{
+    border: none;
+    border-bottom: 1px solid #b9b6b64f;
+    color: black;
+    border-radius: 1px;
+    font-size: 15px;
+    border-top: none;
+    padding: 7px;
+    background: whitesmoke;
+    outline: none;
+    width: 80%;
+
+ }
+
+ .input_detail_1{
+    border: none;
+    border-bottom: 1px solid #b9b6b64f;
+    color: black;
+    border-radius: 1px;
+    font-size: 15px;
+    border-top: none;
+    padding: 7px;
+    background: whitesmoke;
+    outline: none;
+    width: 80%;
+    
+
+ }
+
+ .card_name{
+   padding: 5px;
+   width: 95%;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #b9b6b64f;
+   background: whitesmoke;
+ }
+
+ .cards{
+     display: flex;
+     justify-content: space-between;
+     margin: 1rem 0rem 2rem 0rem;
+     align-items: center;
+     width: 100%;
+
+ }
+
+ .card1{
+    margin-right: 7px;
+ }
+
+ .bill{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    
+}
+
+.billing_info{
+    width: 75%;
+    border: none;
+    border-bottom: 1px solid #b9b6b64f;
+    outline: none;
+    background: whitesmoke;
+    padding: 7px;
+}
+
+h2{
+    font-size: 14px;
+    font-weight: 600;
+    color: #373737e0;
+    margin: 20px 0px 10px 0px;
+}
+
+.zip_code{
+    margin-left: 1rem;
+    
+}
+
+.button_next{
+   width: 8rem;
+   padding: 12px;
+   border: none;
+   color: #ffffffed;
+   border-radius: 5px;
+   background: #1b1bb1d9;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.button_down{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    align-items: center;
+
+}
+
+h3{
+   font-size: 19px;
+    font-weight: 700;
+    color: #373737e0;
+    cursor: pointer;
+}
+
+
+.confirmation{
+   width: 42%;
+   min-height: 23rem;
+   background: whitesmoke;
+   border: none;
+   border-radius: 10px;
+   padding: 2rem;
+}
+
+.button_home{
+   display: contents;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10rem;
+}
+
+h1{
+   color: #ed1e1eb8;
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+}
+
+/* .confirmation_title{
+   display: flex;
+   align-items: center;
+} */
+
+.previous_click{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -6.5rem;
+    font-size: x-large;
+    cursor: pointer;
+
+
+}
+
+.home{
+   color: #665e5eed;
+}
+
+.back{
+   color: #665e5eed;
+
+}
+
+.fa fa-credit-card{
+   color: #8080808c;
+}
